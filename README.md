@@ -1,2 +1,2 @@
-# postgresql-les-bases
-Les bases pour commencer avec PostgreSQL
+# Démarrer avec PostgreSQL
+
