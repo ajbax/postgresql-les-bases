@@ -10,3 +10,7 @@ COPY sample.sql /docker-entrypoint-initdb.d/sample.sql
 ```bash
 docker image build . -t adistar/postgres:1.0
 ```
+
+## Credit
+
+Database source: https://github.com/pthom/northwind_psql
