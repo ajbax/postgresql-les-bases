@@ -1,0 +1,32 @@
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_dbdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: inspire
+      POSTGRES_PASSWORD: "Inspire#123!"
+    networks:
+      - net-postgres-db
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "inspiredev@inspiredevgen.ca"
+      PGADMIN_DEFAULT_PASSWORD: "Inspire#123!"
+    ports:
+      - 8080:80
+    volumes:
+      - ./servers.json:/pgadmin4/servers.json
+    networks:
+      - net-postgres-db
+volumes:
+  postgres_dbdata:
+    driver: local
+
+networks:
+  net-postgres-db:
+    driver: bridge

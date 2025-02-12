@@ -65,5 +65,10 @@ Dans de nombreux cas, vous travaillerez avec plusieurs bases de données. Vous p
 \l
 ```
 
-## Credit
-Database source: https://github.com/pthom/northwind_psql
+Quitter psql 
+
+Pour quitter psql, utilisez la commande **\q**.
+
+```bash
+\q
+```
