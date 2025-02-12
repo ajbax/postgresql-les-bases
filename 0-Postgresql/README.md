@@ -64,3 +64,6 @@ Dans de nombreux cas, vous travaillerez avec plusieurs bases de données. Vous p
 ```bash
 \l
 ```
+
+## Credit
+Database source: https://github.com/pthom/northwind_psql
