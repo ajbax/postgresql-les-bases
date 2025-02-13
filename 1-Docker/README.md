@@ -1,5 +1,7 @@
 # Créer une image Docker Postgres avec une DB préchargée
 
+## 1. Création de limage
+
 ```Dockerfile
 FROM postgres
 ENV POSTGRES_PASSWORD inspire#123!
@@ -8,7 +10,9 @@ COPY sample.sql /docker-entrypoint-initdb.d/sample.sql
 ```
 
 ```bash
+
 docker image build . -t adistar/postgres:1.0
+
 ```
 
 ## Credit

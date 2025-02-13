@@ -2,11 +2,11 @@
 
 ## 1. Intro
 
-## Principales commandes psql que vous devez connaître
+### Principales commandes psql que vous devez connaître
 
 PostgreSQL (Postgres) est u SGBD (système de gestion de base de données relationnelle) open source, fiable, robuste et performant (gratuite) utilisant le langage SQL. PostgreSQL est également l'une des bases de données relationnelles les plus populaires et les plus utilisées.
 
-## psql
+## 2. psql
 
 **psql** est une interface de ligne de commande vous permettant d'interagir avec les bases de données Postgres. Vous pouvez l'utiliser pour vous connecter à une DB, pour ajouter, lire et modifier des données, vérifier les bases de données et les champs disponibles, exécuter des commandes à partir d'un fichier, etc.
 
@@ -24,6 +24,7 @@ psql --user=<utilisateur> -d <nom_de_la_db> -W
 
 #ex:
 psql --user=admin12 -d cours_db
+
 psql -U admin12 -d cours_db
 ```
 
@@ -57,7 +58,7 @@ psql "sslmode=require host=192.168.2.45 dbname=cours_db user=admin12"
 
 _La commande ci-dessus ouvre une connexion SSL à la base de données spécifiée._
 
-## 2. Lister toutes les bases de données
+### Lister toutes les bases de données
 
 Dans de nombreux cas, vous travaillerez avec plusieurs bases de données. Vous pouvez lister toutes les bases de données disponibles avec la commande suivante :
 
@@ -65,7 +66,7 @@ Dans de nombreux cas, vous travaillerez avec plusieurs bases de données. Vous p
 \l
 ```
 
-Quitter psql 
+### Quitter psql
 
 Pour quitter psql, utilisez la commande **\q**.
 
